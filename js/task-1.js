@@ -1,18 +1,18 @@
-let makeTransaction = function multiply(a, b) {
-  console.log(`You ordered ${a * b}`);
-};
-// quantity;
-// pricePerDroid;
-// You ordered < quantity > droids worth < totalPrice > credits!
-// console.log(makeTransaction(5, 3000));
-// "You ordered 5 droids worth 15000 credits!"
-function add(a, b) {
-  console.log(`Addition result equals ${a + b}`);
+function makeTransaction(a, b) {
+  return `Your order ${a} droids worth ${a * b} credits!`;
 }
 
-add(15, 27);
-add(10, 20);
-add(5, 10);
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
 
-let hello = 5;
-console.log(hello);
+function makeTransaction(quantity, pricePerDroid) {
+  return `Your order ${quantity} droids worth ${
+    quantity * pricePerDroid
+  } credits!`;
+}
+
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
+console.log(makeTransaction(10, 600));
